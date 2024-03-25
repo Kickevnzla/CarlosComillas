@@ -1,0 +1,17 @@
+@import '../assets/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	background-color: #ffffff;
+}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	min-height: 100dvh;
+	background-image: url('./../images/FONDO_WEB_COMILLAS.jpg');
+	background-attachment: fixed;
+}

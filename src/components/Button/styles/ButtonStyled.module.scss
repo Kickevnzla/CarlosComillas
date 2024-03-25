@@ -1,0 +1,29 @@
+@import '../../../assets/variables.scss';
+
+.buttonPrimary {
+	background-color: $primary-color;
+	color: $secundary-color;
+}
+
+.buttonSecundary {
+	background-color: $secundary-color;
+	color: $primary-color;
+}
+
+.button {
+	padding: 1em;
+	border-radius: 9999px;
+	border: none;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+.buttonPrimary:hover {
+	background-color: $secundary-color;
+	color: $primary-color;
+}
+
+.buttonSecundary:hover {
+	background-color: $primary-color;
+	color: $secundary-color;
+}

@@ -1,0 +1,25 @@
+@import '../../../assets/variables.scss';
+
+.boostYourBrandContainer {
+	padding: 3em 0;
+	background-color: #ffffff;
+}
+
+.boostYourBrand {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+.boostYourBrand h2 {
+	font-size: 2.5rem;
+}
+
+.boostYourBrand p {
+	max-width: 55ch;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}

@@ -1,0 +1,50 @@
+@import '../../../assets/variables.scss';
+
+.servicesBannerContainer {
+	padding: 3em 0;
+	background-image: url('../../../images/FONDO_WEB_COMILLAS_NEGRO.jpg');
+}
+
+.servicesBanner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.servicesBanner h1 {
+	color: $secundary-color;
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.servicesContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+}
+
+.service {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.serviceIcon {
+	width: 8rem;
+	fill: #ffffff;
+}
+
+.service h3 {
+	color: $secundary-color;
+}
+
+.service p {
+	color: #ffffff;
+	width: 30ch;
+	text-align: center;
+}

@@ -1,0 +1,19 @@
+@import '../../../assets/variables.scss';
+
+.midBanner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.midBanner p {
+	font-weight: 700;
+	width: 40ch;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.gray {
+	background-color: $bright-grey;
+}

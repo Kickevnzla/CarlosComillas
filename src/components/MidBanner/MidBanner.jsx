@@ -5,8 +5,11 @@ import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const bannerVariants = {
-	visible: { opacity: 1, transition: { duration: 3 } },
-	hidden: { opacity: 0 }
+	visible: {
+		scale: 1,
+		transition: { ease: 'easeInOut', duration: 0.5 }
+	},
+	hidden: { scale: 0.8 }
 };
 
 function MidBanner(props) {

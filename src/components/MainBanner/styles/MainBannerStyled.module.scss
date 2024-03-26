@@ -37,7 +37,7 @@
 	gap: 1em;
 }
 
-.mainBannerContent h1 {
+.mainBannerContent span {
 	font-size: 3rem;
 	font-weight: 900;
 	line-height: 0.9em;
@@ -59,13 +59,12 @@
 .socialMediaIcon {
 	border-radius: 9999px;
 	width: 3rem;
+	transition: 0.3s;
 }
 
 .socialMedia a:hover {
 	transform: scale(1.1);
-	transition: 0.3s;
 	.socialMediaIcon {
-		fill: white;
-		transition: 0.3s;
+		transform: translateY(-5px);
 	}
 }

@@ -2,10 +2,10 @@ import Container from '../Container';
 import styles from './styles/MainBannerStyled.module.scss';
 import { motion } from 'framer-motion';
 import carlosImage from '../../images/FotoCarlos.png';
-import LinkedinLogo from '../../images/ICONO_LINKEDIN.svg?react';
-import InstagramLogo from '../../images/ICONO_INSTAGRAM.svg?react';
-import BehanceLogo from '../../images/ICONO_BEHANCE.svg?react';
-import WhatsappLogo from '../../images/ICONO_WHATSAPP.svg?react';
+import IconoLinkedin from '../../images/Iconos/ICONO_LINKEDIN.svg?react';
+import IconoInstagram from '../../images/Iconos/ICONO_INSTAGRAM.svg?react';
+import IconoBehance from '../../images/Iconos/ICONO_BEHANCE.svg?react';
+import IconoWhatsapp from '../../images/Iconos/ICONO_WHATSAPP.svg?react';
 
 function MainBanner() {
 	const text = 'BIENVENIDOS A LA WEB COMILLAS'.split('');
@@ -39,16 +39,16 @@ function MainBanner() {
 						</p>
 						<div className={styles.socialMedia}>
 							<a href='#'>
-								<LinkedinLogo className={styles.socialMediaIcon} />
+								<IconoLinkedin className={styles.socialMediaIcon} />
 							</a>
 							<a href='#'>
-								<InstagramLogo className={styles.socialMediaIcon} />
+								<IconoInstagram className={styles.socialMediaIcon} />
 							</a>
 							<a href='#'>
-								<BehanceLogo className={styles.socialMediaIcon} />
+								<IconoBehance className={styles.socialMediaIcon} />
 							</a>
 							<a href='#'>
-								<WhatsappLogo className={styles.socialMediaIcon} />
+								<IconoWhatsapp className={styles.socialMediaIcon} />
 							</a>
 						</div>
 					</div>

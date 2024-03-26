@@ -1,6 +1,6 @@
-import Container from '../Container';
 import styles from './styles/ClientsGalleryStyled.module.scss';
-import { useState, useEffect } from 'react';
+import Container from '../Container';
+import { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
@@ -9,54 +9,54 @@ import {
 	Slider,
 	Slide,
 	ButtonBack,
-	ButtonNext,
-	Dot
+	ButtonNext
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import logoAfiko from '../../images/Logos-Clientes/LogoAfiko.jpg';
-import logoAngelMusicEvents from '../../images/Logos-Clientes/LogoAngelMusicEvents.jpg';
-import logoBSG from '../../images/Logos-Clientes/LogoBSG.jpg';
-import logoBucare from '../../images/Logos-Clientes/LogoBucare.jpg';
-import logoByGaby from '../../images/Logos-Clientes/LogoByGaby.jpg';
-import logoCaminoAlSer from '../../images/Logos-Clientes/LogoCaminoAlSer.jpg';
-import logoDTJ from '../../images/Logos-Clientes/LogoDTJ.jpg';
-import logoHey from '../../images/Logos-Clientes/LogoHey.jpg';
-import logoHolyDonas from '../../images/Logos-Clientes/LogoHolyDonas.jpg';
-import logoLucchy from '../../images/Logos-Clientes/LogoLucchy.jpg';
-import logoTasty from '../../images/Logos-Clientes/LogoTasty.jpg';
-import logoUCPL from '../../images/Logos-Clientes/LogoUCPL.jpg';
-
-import aplicationAfiko from '../../images/Aplicaciones-Clientes/AplicacionAfiko.jpg';
-import aplicationAngelMusicEvents from '../../images/Aplicaciones-Clientes/AplicacionAngelMusicEvents.jpg';
-import aplicationBSG from '../../images/Aplicaciones-Clientes/AplicacionBSG.jpg';
-import aplicationBucare from '../../images/Aplicaciones-Clientes/AplicacionBucare.jpg';
-import aplicationByGaby from '../../images/Aplicaciones-Clientes/AplicacionByGaby.jpg';
-import aplicationCaminoAlSer from '../../images/Aplicaciones-Clientes/AplicacionCaminoAlSer.jpg';
-import aplicationDTJ from '../../images/Aplicaciones-Clientes/AplicacionDTJ.jpg';
-import aplicationHey from '../../images/Aplicaciones-Clientes/AplicacionHey.jpg';
-import aplicationHolyDonas from '../../images/Aplicaciones-Clientes/AplicacionHolyDonas.jpg';
-import aplicationLucchy from '../../images/Aplicaciones-Clientes/AplicacionLucchy.jpg';
-import aplicationTasty from '../../images/Aplicaciones-Clientes/AplicacionTasty.jpg';
-import aplicationUCPL from '../../images/Aplicaciones-Clientes/AplicacionUCPL.jpg';
+import {
+	LogoAfiko,
+	LogoAngelMusicEvents,
+	LogoBSG,
+	LogoBucare,
+	LogoDTJ,
+	LogoCaminoAlSer,
+	LogoByGaby,
+	LogoHey,
+	LogoHolyDonas,
+	LogoLucchy,
+	LogoTasty,
+	LogoUCPL,
+	AplicacionAfiko,
+	AplicacionAngelMusicEvents,
+	AplicacionBSG,
+	AplicacionBucare,
+	AplicacionByGaby,
+	AplicacionCaminoAlSer,
+	AplicacionDTJ,
+	AplicacionHey,
+	AplicacionHolyDonas,
+	AplicacionLucchy,
+	AplicacionTasty,
+	AplicacionUCPL
+} from '../../images';
 
 const logos = [
-	{ id: 1, logo: logoAfiko, aplication: aplicationAfiko },
+	{ id: 1, logo: LogoAfiko, aplication: AplicacionAfiko },
 	{
 		id: 2,
-		logo: logoAngelMusicEvents,
-		aplication: aplicationAngelMusicEvents
+		logo: LogoAngelMusicEvents,
+		aplication: AplicacionAngelMusicEvents
 	},
-	{ id: 3, logo: logoBSG, aplication: aplicationBSG },
-	{ id: 4, logo: logoBucare, aplication: aplicationBucare },
-	{ id: 5, logo: logoDTJ, aplication: aplicationDTJ },
-	{ id: 6, logo: logoCaminoAlSer, aplication: aplicationCaminoAlSer },
-	{ id: 7, logo: logoByGaby, aplication: aplicationByGaby },
-	{ id: 8, logo: logoHey, aplication: aplicationHey },
-	{ id: 9, logo: logoHolyDonas, aplication: aplicationHolyDonas },
-	{ id: 10, logo: logoLucchy, aplication: aplicationLucchy },
-	{ id: 11, logo: logoTasty, aplication: aplicationTasty },
-	{ id: 12, logo: logoUCPL, aplication: aplicationUCPL }
+	{ id: 3, logo: LogoBSG, aplication: AplicacionBSG },
+	{ id: 4, logo: LogoBucare, aplication: AplicacionBucare },
+	{ id: 5, logo: LogoDTJ, aplication: AplicacionDTJ },
+	{ id: 6, logo: LogoCaminoAlSer, aplication: AplicacionCaminoAlSer },
+	{ id: 7, logo: LogoByGaby, aplication: AplicacionByGaby },
+	{ id: 8, logo: LogoHey, aplication: AplicacionHey },
+	{ id: 9, logo: LogoHolyDonas, aplication: AplicacionHolyDonas },
+	{ id: 10, logo: LogoLucchy, aplication: AplicacionLucchy },
+	{ id: 11, logo: LogoTasty, aplication: AplicacionTasty },
+	{ id: 12, logo: LogoUCPL, aplication: AplicacionUCPL }
 ];
 
 function ClientsGallery() {

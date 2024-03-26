@@ -1,8 +1,8 @@
 import Button from '../Button';
 import Container from '../Container';
 import styles from './styles/ServicesBannerStyled.module.scss';
-import Diseño from '../../images/ICONO_DISENO.svg?react';
-import Asesoria from '../../images/ICONO_ASESORIA.svg?react';
+import IconoDiseno from '../../images/Iconos/ICONO_DISENO.svg?react';
+import IconoAsesoria from '../../images/Iconos/ICONO_ASESORIA.svg?react';
 
 function ServicesBanner() {
 	return (
@@ -12,7 +12,7 @@ function ServicesBanner() {
 					<h1>¿QUÉ SERVICIOS OFREZCO?</h1>
 					<div className={styles.servicesContainer}>
 						<div className={styles.service}>
-							<Diseño className={styles.serviceIcon} />
+							<IconoDiseno className={styles.serviceIcon} />
 							<h3>DISEÑO GRÁFICO</h3>
 							<p>
 								Diseño de identidad visual, logotipos y branding, páginas web,
@@ -21,7 +21,7 @@ function ServicesBanner() {
 							<Button text='COTIZAR DISEÑO' color='secundary' hover='color' />
 						</div>
 						<div className={styles.service}>
-							<Asesoria className={styles.serviceIcon} />
+							<IconoAsesoria className={styles.serviceIcon} />
 							<h3>ASESORÍA</h3>
 							<p>
 								Te ayudo a aclarar el camino para desarrollar de forma adecuada

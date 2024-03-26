@@ -12,7 +12,8 @@ body {
 	position: relative;
 	min-height: 100vh;
 	min-height: 100dvh;
-	background-image: url('./../images/FONDO_WEB_COMILLAS.jpg');
+	background-color: $secundary-color;
+	background-image: url('./../images/Fondos/FONDO_WEB_COMILLAS.jpg');
 	background-attachment: fixed;
 	padding-bottom: 200px;
 }

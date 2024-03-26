@@ -1,18 +1,18 @@
 import Container from '../Container/Container';
 import styles from './styles/FooterStyled.module.scss';
-import LinkedinLogo from '../../images/ICONO_LINKEDIN.svg?react';
-import InstagramLogo from '../../images/ICONO_INSTAGRAM.svg?react';
-import BehanceLogo from '../../images/ICONO_BEHANCE.svg?react';
-import WhatsappLogo from '../../images/ICONO_WHATSAPP.svg?react';
-import EmailLogo from '../../images/ICONO_EMAIL.svg?react';
+import IconoLinkedin from '../../images/Iconos/ICONO_LINKEDIN.svg?react';
+import IconoInstagram from '../../images/Iconos/ICONO_INSTAGRAM.svg?react';
+import IconoBehance from '../../images/Iconos/ICONO_BEHANCE.svg?react';
+import IconoWhatsapp from '../../images/Iconos/ICONO_WHATSAPP.svg?react';
+import IconoEmail from '../../images/Iconos/ICONO_EMAIL.svg?react';
 
 const Footer = () => {
 	const socialIcons = [
-		{ id: 0, icon: LinkedinLogo },
-		{ id: 1, icon: InstagramLogo },
-		{ id: 2, icon: BehanceLogo },
-		{ id: 3, icon: WhatsappLogo },
-		{ id: 4, icon: EmailLogo }
+		{ id: 0, icon: IconoLinkedin },
+		{ id: 1, icon: IconoInstagram },
+		{ id: 2, icon: IconoBehance },
+		{ id: 3, icon: IconoWhatsapp },
+		{ id: 4, icon: IconoEmail }
 	];
 	return (
 		<Container>

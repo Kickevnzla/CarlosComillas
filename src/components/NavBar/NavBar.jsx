@@ -2,7 +2,7 @@ import styles from './styles/NavBarStyled.module.scss';
 
 import { useState } from 'react';
 
-import logo from '../../images/LOGO COMILLAS_2024__SINFONDO-4.png';
+import { LogoComillasSinFondo } from '../../images';
 import Container from '../Container/Container';
 
 import { RiMenu3Line } from 'react-icons/ri';
@@ -21,7 +21,11 @@ const HomeNavBar = () => {
 					<nav className={styles.navBar}>
 						<div className={styles.navLogoContainer}>
 							<a to='/'>
-								<img src={logo} alt='Logo Zelf' className={styles.logo} />
+								<img
+									src={LogoComillasSinFondo}
+									alt='Logo Zelf'
+									className={styles.logo}
+								/>
 							</a>
 						</div>
 

@@ -1,6 +1,7 @@
 import AboutMe from '../components/AboutMe';
 import BoostYourBrand from '../components/BoostYourBrand';
 import ClientsGallery from '../components/ClientsGallery';
+import ContactForm from '../components/ContactForm';
 import { HomeLayout } from '../components/Layouts';
 import MainBanner from '../components/MainBanner';
 import MidBanner from '../components/MidBanner';
@@ -23,6 +24,7 @@ function HomePage() {
 					text='EL LOGO ES EL IDENTIFICADOR DE LA MARCA, SI NO ES BUENO, LA MARCA SE PIERDE.'
 				/>
 				<ClientsGallery />
+				<ContactForm />
 			</HomeLayout>
 		</>
 	);

@@ -1,0 +1,49 @@
+@import '../../../assets/variables.scss';
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	background-color: #000;
+	flex-direction: column;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+	align-items: center;
+}
+
+.footer p {
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	font-weight: lighter;
+
+	span {
+		font-weight: 700;
+	}
+}
+
+.socialIcon {
+	list-style-type: none;
+	display: flex;
+	padding-bottom: 1em;
+}
+
+.socialIconLink {
+	width: 3rem;
+	margin: 0 0.4em;
+	display: inline-block;
+	transition: 0.5s;
+
+	svg {
+		fill: $secundary-color;
+	}
+
+	svg:hover {
+		fill: #ffffff;
+	}
+}
+.socialIconLink:hover {
+	transform: translateY(-10px);
+}

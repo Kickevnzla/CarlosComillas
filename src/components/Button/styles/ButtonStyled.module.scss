@@ -18,12 +18,20 @@
 	transition: 0.3s;
 }
 
-.buttonPrimary:hover {
+.buttonPrimary.buttonHoverColor:hover {
 	background-color: $secundary-color;
 	color: $primary-color;
 }
 
-.buttonSecundary:hover {
-	background-color: $primary-color;
-	color: $secundary-color;
+.buttonSecundary.buttonHoverColor:hover {
+	background-color: #ffffff;
+	color: $primary-color;
+}
+
+.buttonPrimary.buttonHoverScale:hover {
+	transform: scale(1.1);
+}
+
+.buttonSecundary.buttonHoverScale:hover {
+	transform: scale(1.1);
 }

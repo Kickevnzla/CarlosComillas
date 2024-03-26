@@ -13,7 +13,11 @@ function BoostYourBrand() {
 						Te ofrezco las herramientas para que puedas darle fuerza a tu marca
 						y empezar a comunicar con mayor impacto tu propuesta de valor.
 					</p>
-					<Button text='QUIERO POTENCIAR MI MARCA' color='secundary' />
+					<Button
+						text='QUIERO POTENCIAR MI MARCA'
+						color='primary'
+						hover='color'
+					/>
 				</div>
 			</Container>
 		</div>

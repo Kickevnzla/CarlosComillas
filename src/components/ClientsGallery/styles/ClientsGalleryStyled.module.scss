@@ -21,6 +21,39 @@
 	margin-bottom: 1em;
 }
 
+.carousel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carouselContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+
+.gridContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow {
+	font-size: 2rem;
+	cursor: pointer;
+	transition: 0.3s;
+	border: none;
+	line-height: 0;
+	background-color: transparent;
+}
+
+.arrow:hover {
+	transform: scale(1.3);
+}
+
 .clientsLogos {
 	display: grid;
 	width: 80%;
@@ -35,7 +68,7 @@
 	justify-content: center;
 	align-items: center;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	filter: grayscale(80%);
+	filter: grayscale(100%);
 	transition: 0.3s;
 	cursor: pointer;
 }
@@ -71,9 +104,12 @@
 		top: 30px;
 		right: 30px;
 		font-size: 2rem;
+		width: auto;
 		color: $primary-color;
 		cursor: pointer;
 		transition: 0.3s;
+		background-color: white;
+		border-radius: 9999px;
 	}
 
 	.closeIcon:hover {

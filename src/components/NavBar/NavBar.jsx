@@ -2,7 +2,7 @@ import styles from './styles/NavBarStyled.module.scss';
 
 import { useState } from 'react';
 
-import logo from '../../images/LOGO COMILLAS_2024__SINFONDO-4.png';
+import { LogoComillasSinFondo } from '../../images';
 import Container from '../Container/Container';
 
 import { RiMenu3Line } from 'react-icons/ri';
@@ -20,57 +20,29 @@ const HomeNavBar = () => {
 				<header>
 					<nav className={styles.navBar}>
 						<div className={styles.navLogoContainer}>
-							<a to='/'>
-								<img src={logo} alt='Logo Zelf' className={styles.logo} />
+							<a href='#'>
+								<img
+									src={LogoComillasSinFondo}
+									alt='Logo Zelf'
+									className={styles.logo}
+								/>
 							</a>
-						</div>
-
-						<div className={styles.burgerMenu} onClick={toggleMenu}>
-							<RiMenu3Line />
 						</div>
 
 						<ul
 							className={`${styles.navBarMenu} ${isOpen ? styles.isOpen : ''}`}
 						>
 							<li>
-								<a
-									href='#Servicios'
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Servicios
-								</a>
+								<a href='#Servicios'>Servicios</a>
 							</li>
 							<li>
-								<a
-									href={'#SobreMi'}
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Sobre Mí
-								</a>
+								<a href='#SobreMi'>Sobre Mí</a>
 							</li>
 							<li>
-								<a
-									href={'#Portafolio'}
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Portafolio
-								</a>
+								<a href='#Portafolio'>Portafolio</a>
 							</li>
 							<li>
-								<a
-									href={'#Contacto'}
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Contacto
-								</a>
+								<a href='#Contacto'>Contacto</a>
 							</li>
 						</ul>
 					</nav>

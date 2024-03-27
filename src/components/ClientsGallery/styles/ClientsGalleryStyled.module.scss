@@ -2,7 +2,7 @@
 
 .clientsGalleryContainer {
 	background-color: #ffffff;
-	padding: 50px 0;
+	padding: 100px 0;
 }
 
 .clientsGallery {
@@ -27,6 +27,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 2em;
 }
 
 .carouselContent {
@@ -124,7 +125,7 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 475px) {
 	.clientsLogos {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;

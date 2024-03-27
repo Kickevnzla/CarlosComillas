@@ -1,7 +1,7 @@
 @import '../../../assets/variables.scss';
 
 .boostYourBrandContainer {
-	padding: 3em 0;
+	padding: 100px 0;
 	background-color: #ffffff;
 }
 
@@ -11,15 +11,38 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
+
+	h3 {
+		text-align: center;
+	}
 }
-.boostYourBrand h2 {
+.boostYourBrand h1 {
 	font-size: 2.5rem;
+	text-align: center;
 }
 
 .boostYourBrand p {
-	max-width: 55ch;
+	max-width: 36ch;
 	text-align: center;
-	font-size: 1.5rem;
 	line-height: 1.2em;
 	margin-bottom: 1em;
+}
+
+@media (max-width: 475px) {
+	.boostYourBrand p {
+		max-width: 30ch;
+	}
+}
+
+@media (max-width: 320px) {
+	.boostYourBrand h1 {
+		max-width: 10ch;
+	}
+	.boostYourBrand p {
+		max-width: 25ch;
+	}
+	.boostYourBrand h3 {
+		font-size: 0.8rem;
+		max-width: 15ch;
+	}
 }

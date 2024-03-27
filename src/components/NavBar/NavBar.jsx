@@ -20,7 +20,7 @@ const HomeNavBar = () => {
 				<header>
 					<nav className={styles.navBar}>
 						<div className={styles.navLogoContainer}>
-							<a to='/'>
+							<a href='#'>
 								<img
 									src={LogoComillasSinFondo}
 									alt='Logo Zelf'
@@ -29,52 +29,20 @@ const HomeNavBar = () => {
 							</a>
 						</div>
 
-						<div className={styles.burgerMenu} onClick={toggleMenu}>
-							<RiMenu3Line />
-						</div>
-
 						<ul
 							className={`${styles.navBarMenu} ${isOpen ? styles.isOpen : ''}`}
 						>
 							<li>
-								<a
-									href='#Servicios'
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Servicios
-								</a>
+								<a href='#Servicios'>Servicios</a>
 							</li>
 							<li>
-								<a
-									href={'#SobreMi'}
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Sobre Mí
-								</a>
+								<a href='#SobreMi'>Sobre Mí</a>
 							</li>
 							<li>
-								<a
-									href={'#Portafolio'}
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Portafolio
-								</a>
+								<a href='#Portafolio'>Portafolio</a>
 							</li>
 							<li>
-								<a
-									href={'#Contacto'}
-									className={({ isActive }) =>
-										isActive ? styles.isActive : ''
-									}
-								>
-									Contacto
-								</a>
+								<a href='#Contacto'>Contacto</a>
 							</li>
 						</ul>
 					</nav>

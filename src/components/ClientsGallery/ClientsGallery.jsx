@@ -1,10 +1,11 @@
 import styles from './styles/ClientsGalleryStyled.module.scss';
 import Container from '../Container';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import clients from '../../assets/clients.json';
+import Button from '../Button';
 import {
 	CarouselProvider,
 	Slider,
@@ -23,7 +24,7 @@ function ClientsGallery() {
 			<Container>
 				<div className={styles.clientsGallery}>
 					<div className={styles.galleryTitle}>
-						<h1>DISEÑO DE IDENTIDAD VISUAL</h1>
+						<h1>PORTAFOLIO</h1>
 						<h3>MARCAS Y LOGOS CON SELLO COMILLAS</h3>
 					</div>
 					<CarouselProvider
@@ -70,6 +71,12 @@ function ClientsGallery() {
 							</ButtonNext>
 						</div>
 					</CarouselProvider>
+					<Button
+						text='VER MÁS LOGOS'
+						color='primary'
+						hover='color'
+						link='https://www.instagram.com/comillasestudio/'
+					/>
 				</div>
 			</Container>
 			<AnimatePresence initial={false}>

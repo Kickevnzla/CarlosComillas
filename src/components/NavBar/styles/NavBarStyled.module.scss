@@ -7,6 +7,7 @@
 	top: 0;
 	left: 0;
 	padding: 1em 0;
+	z-index: 999;
 }
 
 .navBar {
@@ -66,17 +67,6 @@
 	border-color: $secundary-color;
 }
 
-.burgerMenu {
-	display: none;
-	font-size: 1.5rem;
-}
-
-.isActive {
-	border-bottom: solid;
-	border-color: $primary-color;
-	font-size: 1.1rem;
-}
-
 /* sm */
 @media (max-width: 640px) {
 	.navBarMenu {
@@ -104,9 +94,5 @@
 
 	.navBarMenu li a {
 		color: #fff;
-	}
-
-	.burgerMenu {
-		display: block;
 	}
 }

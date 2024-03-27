@@ -8,7 +8,7 @@ function BoostYourBrand() {
 			<Container>
 				<div className={styles.boostYourBrand}>
 					<h3>DISEÑO GRÁFICO | LOGOS | ASESORÍA</h3>
-					<h2>POTENCIA TU MARCA</h2>
+					<h1>POTENCIA TU MARCA</h1>
 					<p className={styles.boostYourBrandP}>
 						Te ofrezco las herramientas para que puedas darle fuerza a tu marca
 						y empezar a comunicar con mayor impacto tu propuesta de valor.
@@ -17,6 +17,7 @@ function BoostYourBrand() {
 						text='QUIERO POTENCIAR MI MARCA'
 						color='primary'
 						hover='color'
+						link='https://wa.me/message/TDROOFLRB2OCH1'
 					/>
 				</div>
 			</Container>

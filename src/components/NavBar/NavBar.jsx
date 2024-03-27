@@ -5,8 +5,6 @@ import { useState } from 'react';
 import { LogoComillasSinFondo } from '../../images';
 import Container from '../Container/Container';
 
-import { RiMenu3Line } from 'react-icons/ri';
-
 const HomeNavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 

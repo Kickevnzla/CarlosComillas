@@ -5,7 +5,7 @@ import { FotoComillas2024 } from '../../images';
 
 function AboutMe() {
 	return (
-		<div className={styles.aboutMeContainer}>
+		<section id='aboutMe' className={styles.aboutMeContainer}>
 			<Container>
 				<div className={styles.aboutMe}>
 					<div className={styles.aboutMeContent}>
@@ -31,7 +31,7 @@ function AboutMe() {
 					/>
 				</div>
 			</Container>
-		</div>
+		</section>
 	);
 }
 

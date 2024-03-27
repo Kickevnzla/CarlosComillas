@@ -23,7 +23,7 @@ function MidBanner(props) {
 	}, [controls, inView]);
 
 	return (
-		<div
+		<section
 			className={`${styles.midBannerContainer} ${props.color === 'gray' ? styles.gray : ''}`}
 		>
 			<Container>
@@ -37,7 +37,7 @@ function MidBanner(props) {
 					<p>{props.text}</p>
 				</motion.div>
 			</Container>
-		</div>
+		</section>
 	);
 }
 

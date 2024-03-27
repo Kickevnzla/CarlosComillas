@@ -4,7 +4,8 @@ function Button(props) {
 	return (
 		<a href={props.link} target='_blank'>
 			<button
-				className={`${styles.button} ${props.color === 'primary' ? styles.buttonPrimary : styles.buttonSecundary} ${props.hover === 'color' ? styles.buttonHoverColor : styles.buttonHoverScale}`}
+				disabled={props.disabled}
+				className={`${styles.button} ${props.color === 'primary' ? styles.buttonPrimary : styles.buttonSecundary} ${props.hover === 'color' ? styles.buttonHoverColor : styles.buttonHoverScale} ${props.isDisabled ? styles.buttonDisabled : ''} `}
 			>
 				{props.text}
 			</button>

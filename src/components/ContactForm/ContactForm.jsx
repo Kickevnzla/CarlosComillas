@@ -19,19 +19,19 @@ function ContactForm() {
 			return;
 		}
 		setMissingCaptcha(false);
-		// emailjs
-		// 	.sendForm('service_yo40oxh', 'template_izy3g03', form.current, {
-		// 		publicKey: 'paUBaz1ksk95jwvwl'
-		// 	})
-		// 	.then(
-		// 		() => {
-		// 			console.log('SUCCESS!');
-		// 			form.current.reset();
-		// 		},
-		// 		error => {
-		// 			console.log('FAILED...', error.text);
-		// 		}
-		// 	);
+		emailjs
+			.sendForm('service_yo40oxh', 'template_izy3g03', form.current, {
+				publicKey: 'paUBaz1ksk95jwvwl'
+			})
+			.then(
+				() => {
+					console.log('SUCCESS!');
+					form.current.reset();
+				},
+				error => {
+					console.log('FAILED...', error.text);
+				}
+			);
 	};
 
 	const handleCaptcha = value => {
@@ -40,7 +40,7 @@ function ContactForm() {
 	};
 
 	return (
-		<div className={styles.contactFormContainer}>
+		<div id='contact' className={styles.contactFormContainer}>
 			<Container>
 				<form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
 					<h1>TU FORMULARIO</h1>
@@ -102,7 +102,12 @@ function ContactForm() {
 								onChange={handleCaptcha}
 							/>
 						</div>
-						<Button text='ENVIAR DATOS' color='primary' hover='scale' />
+						<Button
+							text='ENVIAR DATOS'
+							color='primary'
+							hover='scale'
+							isDisabled={true}
+						/>
 					</div>
 				</form>
 			</Container>

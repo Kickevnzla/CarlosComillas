@@ -20,7 +20,7 @@ function ClientsGallery() {
 	const [tempImage, setTempImage] = useState('');
 
 	return (
-		<div className={styles.clientsGalleryContainer}>
+		<section id='portfolio' className={styles.clientsGalleryContainer}>
 			<Container>
 				<div className={styles.clientsGallery}>
 					<div className={styles.galleryTitle}>
@@ -98,7 +98,7 @@ function ClientsGallery() {
 					</motion.div>
 				)}
 			</AnimatePresence>
-		</div>
+		</section>
 	);
 }
 

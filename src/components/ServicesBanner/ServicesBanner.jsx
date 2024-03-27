@@ -6,7 +6,7 @@ import IconoAsesoria from '../../images/Iconos/ICONO_ASESORIA.svg?react';
 
 function ServicesBanner() {
 	return (
-		<div className={styles.servicesBannerContainer}>
+		<section id='services' className={styles.servicesBannerContainer}>
 			<Container>
 				<div className={styles.servicesBanner}>
 					<h1>MIS SERVICIOS</h1>
@@ -42,7 +42,7 @@ function ServicesBanner() {
 					</div>
 				</div>
 			</Container>
-		</div>
+		</section>
 	);
 }
 

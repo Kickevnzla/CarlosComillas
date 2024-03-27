@@ -31,16 +31,44 @@ const HomeNavBar = () => {
 							className={`${styles.navBarMenu} ${isOpen ? styles.isOpen : ''}`}
 						>
 							<li>
-								<a href='#Servicios'>Servicios</a>
+								<a
+									onClick={() => {
+										const element = document.getElementById('services');
+										element?.scrollIntoView({ behavior: 'smooth' });
+									}}
+								>
+									Servicios
+								</a>
 							</li>
 							<li>
-								<a href='#SobreMi'>Sobre Mí</a>
+								<a
+									onClick={() => {
+										const element = document.getElementById('aboutMe');
+										element?.scrollIntoView({ behavior: 'smooth' });
+									}}
+								>
+									Sobre Mí
+								</a>
 							</li>
 							<li>
-								<a href='#Portafolio'>Portafolio</a>
+								<a
+									onClick={() => {
+										const element = document.getElementById('portfolio');
+										element?.scrollIntoView({ behavior: 'smooth' });
+									}}
+								>
+									Portafolio
+								</a>
 							</li>
 							<li>
-								<a href='#Contacto'>Contacto</a>
+								<a
+									onClick={() => {
+										const element = document.getElementById('contact');
+										element?.scrollIntoView({ behavior: 'smooth' });
+									}}
+								>
+									Contacto
+								</a>
 							</li>
 						</ul>
 					</nav>

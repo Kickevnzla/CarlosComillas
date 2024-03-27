@@ -3,7 +3,7 @@ import Container from '../Container';
 import { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa6';
 import clients from '../../assets/clients.json';
 import Button from '../Button';
 import {
@@ -17,7 +17,21 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function ClientsGallery() {
 	const [isVisible, setIsVisible] = useState(false);
-	const [tempImage, setTempImage] = useState('');
+	const [tempClient, setTempClient] = useState('');
+
+	const handleAplicationSwipe = direction => () => {
+		const slides = clients.slides
+			.map(slide => slide.map(client => client))
+			.flat();
+
+		const currentIndex = slides.findIndex(client => client === tempClient);
+		const nextIndex =
+			direction === 'right'
+				? (currentIndex + 1) % slides.length
+				: (currentIndex - 1 + slides.length) % slides.length;
+
+		setTempClient(slides[nextIndex]);
+	};
 
 	return (
 		<section id='portfolio' className={styles.clientsGalleryContainer}>
@@ -34,14 +48,14 @@ function ClientsGallery() {
 						isIntrinsicHeight={true}
 						infinite={true}
 						visibleSlides={1}
-						isPlaying={true}
-						interval={6000}
 						className={styles.carousel}
 					>
 						<div className={styles.carouselContent}>
-							<ButtonBack className={styles.arrow}>
-								<FaArrowCircleLeft />
-							</ButtonBack>
+							{!isVisible && (
+								<ButtonBack className={styles.arrow}>
+									<FaArrowLeft />
+								</ButtonBack>
+							)}
 
 							<Slider className={styles.slider}>
 								{clients.slides.map((slide, index) => (
@@ -54,7 +68,7 @@ function ClientsGallery() {
 														className={styles.clientLogo}
 														onClick={() => {
 															setIsVisible(true);
-															setTempImage(client.aplicacion);
+															setTempClient(client);
 														}}
 													>
 														<img src={client.logo} />
@@ -66,9 +80,11 @@ function ClientsGallery() {
 								))}
 							</Slider>
 
-							<ButtonNext className={styles.arrow}>
-								<FaArrowCircleRight />
-							</ButtonNext>
+							{!isVisible && (
+								<ButtonNext className={styles.arrow}>
+									<FaArrowRight />
+								</ButtonNext>
+							)}
 						</div>
 					</CarouselProvider>
 					<Button
@@ -87,14 +103,21 @@ function ClientsGallery() {
 						exit={{ opacity: 0 }}
 						className={styles.clientAplicationContainer}
 					>
+						<span className={styles.arrowAplication}>
+							<FaArrowLeft onClick={handleAplicationSwipe('left')} />
+						</span>
+
 						<div>
-							<img src={tempImage} />
+							<img src={tempClient.aplicacion} />
 
 							<IoClose
 								className={styles.closeIcon}
 								onClick={() => setIsVisible(false)}
 							/>
 						</div>
+						<span className={styles.arrowAplication}>
+							<FaArrowRight onClick={handleAplicationSwipe('right')} />
+						</span>
 					</motion.div>
 				)}
 			</AnimatePresence>

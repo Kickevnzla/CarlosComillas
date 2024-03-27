@@ -5,6 +5,7 @@ import IconoInstagram from '../../images/Iconos/ICONO_INSTAGRAM.svg?react';
 import IconoBehance from '../../images/Iconos/ICONO_BEHANCE.svg?react';
 import IconoWhatsapp from '../../images/Iconos/ICONO_WHATSAPP.svg?react';
 import IconoEmail from '../../images/Iconos/ICONO_EMAIL.svg?react';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
 	const socialIcons = [
@@ -33,6 +34,7 @@ const Footer = () => {
 	return (
 		<Container>
 			<div className={styles.footer}>
+				<h1>Sigueme en:</h1>
 				<ul className={styles.socialIcon}>
 					{socialIcons.map((icon, index) => (
 						<li key={index} className={styles.socialIconItem}>
@@ -50,6 +52,17 @@ const Footer = () => {
 					Actualmente en: <span>Santiago de Chile</span>
 				</p>
 				<p>&copy;2024 Grupo Comillas SpA | Todos Los Derechos Reservados</p>
+				<a
+					href='https://www.linkedin.com/in/jesús-paredes-arnaez-8725841bb'
+					target='_blank'
+				>
+					<motion.p
+						whileHover={{ color: '#be5cc1', scale: 1.1 }}
+						transition={{ duration: 0.5, type: 'spring', stiffness: 300 }}
+					>
+						Desarrollado por: Jesús Paredes
+					</motion.p>
+				</a>
 			</div>
 		</Container>
 	);

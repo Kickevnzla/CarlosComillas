@@ -1,24 +1,50 @@
 import styles from './styles/NavBarStyled.module.scss';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { LogoComillasSinFondo } from '../../images';
 import Container from '../Container/Container';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 const HomeNavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [hidden, setHidden] = useState(false);
+
+	const { scrollY } = useScroll();
+
+	useMotionValueEvent(scrollY, 'change', latest => {
+		const previous = scrollY.getPrevious();
+		if (latest > previous && latest > 150) {
+			setHidden(true);
+		} else {
+			setHidden(false);
+		}
+	});
 
 	const toggleMenu = () => {
 		setIsOpen(open => !open);
 	};
 
 	return (
-		<div className={styles.navBarContainer}>
+		<motion.div
+			variants={{
+				visible: { opacity: 1, y: 0 },
+				hidden: { opacity: 0, y: -100 }
+			}}
+			animate={hidden ? 'hidden' : 'visible'}
+			transition={{ duration: 0.5, ease: 'easeInOut' }}
+			className={styles.navBarContainer}
+		>
 			<Container>
 				<header>
 					<nav className={styles.navBar}>
 						<div className={styles.navLogoContainer}>
-							<a href='#'>
+							<a
+								onClick={() => {
+									const element = document.getElementById('mainBanner');
+									element?.scrollIntoView({ behavior: 'smooth' });
+								}}
+							>
 								<img
 									src={LogoComillasSinFondo}
 									alt='Logo Zelf'
@@ -74,7 +100,7 @@ const HomeNavBar = () => {
 					</nav>
 				</header>
 			</Container>
-		</div>
+		</motion.div>
 	);
 };
 

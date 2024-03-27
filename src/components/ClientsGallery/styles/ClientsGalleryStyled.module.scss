@@ -2,7 +2,7 @@
 
 .clientsGalleryContainer {
 	background-color: #ffffff;
-	padding: 50px 0;
+	padding: 100px 0;
 }
 
 .clientsGallery {
@@ -16,6 +16,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 	align-items: center;
 	gap: 1em;
 	margin-bottom: 1em;
@@ -26,13 +27,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 2em;
 }
 
 .carouselContent {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 80%;
 }
 
 .gridContainer {
@@ -56,21 +58,21 @@
 
 .clientsLogos {
 	display: grid;
-	width: 80%;
 	grid-template-columns: repeat(3, 1fr);
-	justify-content: center;
-	align-items: center;
-	gap: 2em;
+	grid-template-rows: auto auto auto;
+	grid-auto-rows: 0px;
+	position: relative;
+	overflow: hidden;
+	width: 85%;
 }
 
 .clientLogo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: inline-flex;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	filter: grayscale(100%);
 	transition: 0.3s;
 	cursor: pointer;
+	margin: 0.5em;
 }
 
 .clientLogo img {
@@ -114,5 +116,18 @@
 
 	.closeIcon:hover {
 		transform: scale(1.3);
+	}
+}
+
+@media (max-width: 768px) {
+	.clientsLogos {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 475px) {
+	.clientsLogos {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
 	}
 }

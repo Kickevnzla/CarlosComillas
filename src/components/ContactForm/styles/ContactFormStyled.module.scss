@@ -1,5 +1,5 @@
 .contactFormContainer {
-	padding: 50px 0;
+	padding: 100px 0;
 }
 
 .contactForm {
@@ -12,6 +12,10 @@
 	h1 {
 		width: 20ch;
 		line-height: 2.8rem;
+		text-align: center;
+	}
+	p {
+		text-align: center;
 	}
 }
 
@@ -60,5 +64,43 @@
 
 	textarea::placeholder {
 		color: #c4c4c4;
+	}
+}
+
+@media (max-width: 1280px) {
+	.formContent {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.contactForm {
+		p {
+			max-width: 30ch;
+		}
+	}
+	.formContent {
+		flex-direction: column;
+	}
+	.formLeft {
+		width: 100%;
+	}
+
+	.formRight {
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.contactForm {
+		h1 {
+			width: 100%;
+		}
+	}
+
+	.formLeft {
+		input {
+			margin-bottom: 0;
+		}
 	}
 }

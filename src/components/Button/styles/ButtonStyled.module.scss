@@ -18,6 +18,10 @@
 	transition: 0.3s;
 }
 
+.button:hover {
+	cursor: pointer;
+}
+
 .buttonPrimary.buttonHoverColor:hover {
 	background-color: $secundary-color;
 	color: $primary-color;

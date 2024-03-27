@@ -5,7 +5,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 50px 0 0 0;
 	height: 100vh;
 }
 
@@ -13,44 +12,46 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	height: 100%;
+	width: 100%;
+	gap: 1rem;
 }
 
-.carlosImage {
-	position: relative;
-	width: 50%;
-	height: 100%;
+.logoComillas {
+	width: 10rem;
+	transition: 0.3s;
 }
 
-.carlosImage img {
-	position: absolute;
-	bottom: 0;
-	width: 80%;
+.logoComillas:hover {
+	transform: translateY(-5px) scale(1.1);
 }
 
 .mainBannerContent {
 	display: flex;
 	justify-content: center;
-	align-items: start;
+	align-items: center;
 	flex-direction: column;
-	width: 50%;
-	gap: 1em;
+	width: 100%;
+	gap: 2em;
+	text-align: center;
 }
 
-.mainBannerContent span {
+.mainBannerContent div {
 	font-size: 3rem;
 	font-weight: 900;
 	line-height: 0.9em;
+	width: 13ch;
 }
 
 .mainBannerContent p {
-	font-size: 1.5rem;
-	line-height: 1.2em;
+	max-width: 30ch;
+	text-align: center;
 }
 
 .socialMedia {
 	display: flex;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
 	gap: 1em;
 	width: 100%;
@@ -66,5 +67,38 @@
 	transform: scale(1.1);
 	.socialMediaIcon {
 		transform: translateY(-5px);
+	}
+}
+
+/* md */
+@media (max-width: 768px) {
+	.mainBannerContent {
+		p {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+@media (max-width: 475px) {
+	.mainBannerContent {
+		div {
+			line-height: 1em;
+			max-width: 100%;
+			font-size: 2.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.mainBannerContent {
+		div {
+			max-width: 8ch;
+		}
+	}
+	.socialMedia {
+		gap: 0.5em;
 	}
 }

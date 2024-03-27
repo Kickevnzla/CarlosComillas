@@ -87,12 +87,14 @@ function ClientsGallery() {
 						exit={{ opacity: 0 }}
 						className={styles.clientAplicationContainer}
 					>
-						<img src={tempImage} />
+						<div>
+							<img src={tempImage} />
 
-						<IoClose
-							className={styles.closeIcon}
-							onClick={() => setIsVisible(false)}
-						/>
+							<IoClose
+								className={styles.closeIcon}
+								onClick={() => setIsVisible(false)}
+							/>
+						</div>
 					</motion.div>
 				)}
 			</AnimatePresence>

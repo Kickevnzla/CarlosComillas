@@ -1,27 +1,42 @@
 import styles from './styles/ContactFormStyled.module.scss';
 import Container from '../Container';
 import Button from '../Button';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function ContactForm() {
 	const form = useRef();
+	const [captcha, setCaptcha] = useState(false);
+	const [missingCaptcha, setMissingCaptcha] = useState(false);
+
 	const sendEmail = e => {
 		e.preventDefault();
 
-		emailjs
-			.sendForm('service_yo40oxh', 'template_izy3g03', form.current, {
-				publicKey: 'paUBaz1ksk95jwvwl'
-			})
-			.then(
-				() => {
-					console.log('SUCCESS!');
-					form.current.reset();
-				},
-				error => {
-					console.log('FAILED...', error.text);
-				}
-			);
+		if (!captcha) {
+			setMissingCaptcha(true);
+			return;
+		}
+		setMissingCaptcha(false);
+		// emailjs
+		// 	.sendForm('service_yo40oxh', 'template_izy3g03', form.current, {
+		// 		publicKey: 'paUBaz1ksk95jwvwl'
+		// 	})
+		// 	.then(
+		// 		() => {
+		// 			console.log('SUCCESS!');
+		// 			form.current.reset();
+		// 		},
+		// 		error => {
+		// 			console.log('FAILED...', error.text);
+		// 		}
+		// 	);
+	};
+
+	const handleCaptcha = value => {
+		setMissingCaptcha(false);
+		value ? setCaptcha(true) : setCaptcha(false);
 	};
 
 	return (
@@ -73,7 +88,22 @@ function ContactForm() {
 							></textarea>
 						</div>
 					</div>
-					<Button text='ENVIAR DATOS' color='primary' hover='scale' />
+					<div className={styles.underForm}>
+						<div>
+							<AnimatePresence>
+								{missingCaptcha && (
+									<motion.h4 animate={{ y: ['30px', 0] }} exit={{ y: '30px' }}>
+										¿Eres un robot?
+									</motion.h4>
+								)}
+							</AnimatePresence>
+							<ReCAPTCHA
+								sitekey={import.meta.env.VITE_SITE_KEY}
+								onChange={handleCaptcha}
+							/>
+						</div>
+						<Button text='ENVIAR DATOS' color='primary' hover='scale' />
+					</div>
 				</form>
 			</Container>
 		</div>

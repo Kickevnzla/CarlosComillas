@@ -4,7 +4,7 @@ import Button from '../Button';
 
 function BoostYourBrand() {
 	return (
-		<div className={styles.boostYourBrandContainer}>
+		<section className={styles.boostYourBrandContainer}>
 			<Container>
 				<div className={styles.boostYourBrand}>
 					<h3>DISEÑO GRÁFICO | LOGOS | ASESORÍA</h3>
@@ -21,7 +21,7 @@ function BoostYourBrand() {
 					/>
 				</div>
 			</Container>
-		</div>
+		</section>
 	);
 }
 

@@ -17,6 +17,13 @@ body {
 	background-attachment: fixed;
 	padding-bottom: 200px;
 }
+html,
+body {
+	overflow-x: hidden;
+}
+body {
+	position: relative;
+}
 
 p {
 	font-size: 1.3rem;

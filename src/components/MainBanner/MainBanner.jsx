@@ -12,7 +12,7 @@ function MainBanner() {
 	const text = ' ESTA ES LA WEB COMILLAS'.split('');
 
 	return (
-		<section className={styles.mainBanner}>
+		<section id='mainBanner' className={styles.mainBanner}>
 			<div className={styles.mainBannerContainer}>
 				<a href='https://www.instagram.com/comillasestudio/' target='_blank'>
 					<LogoComillas className={styles.logoComillas} />

@@ -106,7 +106,7 @@ function ContactForm() {
 							text='ENVIAR DATOS'
 							color='primary'
 							hover='scale'
-							isDisabled={true}
+							isDisabled={captcha ? false : true}
 						/>
 					</div>
 				</form>

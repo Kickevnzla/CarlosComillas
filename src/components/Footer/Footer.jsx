@@ -34,7 +34,7 @@ const Footer = () => {
 	return (
 		<Container>
 			<div className={styles.footer}>
-				<h1>Sigueme en:</h1>
+				<h1>Sígueme en:</h1>
 				<ul className={styles.socialIcon}>
 					{socialIcons.map((icon, index) => (
 						<li key={index} className={styles.socialIconItem}>

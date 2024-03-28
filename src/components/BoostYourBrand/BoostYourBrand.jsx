@@ -14,7 +14,7 @@ function BoostYourBrand() {
 						y empezar a comunicar con mayor impacto tu propuesta de valor.
 					</p>
 					<Button
-						text='QUIERO POTENCIAR MI MARCA'
+						text='POTENCIAR TU MARCA'
 						color='primary'
 						hover='color'
 						link='https://wa.me/message/TDROOFLRB2OCH1'

@@ -88,7 +88,7 @@ function ClientsGallery() {
 						</div>
 					</CarouselProvider>
 					<Button
-						text='VER MÁS LOGOS'
+						text='VER MÁS'
 						color='primary'
 						hover='color'
 						link='https://www.instagram.com/comillasestudio/'

@@ -14,10 +14,7 @@ function HomePage() {
 			<HomeLayout>
 				<MainBanner />
 				<BoostYourBrand />
-				<MidBanner
-					color='gray'
-					text='UNA MARCA CON BUEN DISEÑO, IMPACTA Y FIDELIZA MUCHO MÁS.'
-				/>
+				<MidBanner text='UNA MARCA CON BUEN DISEÑO, IMPACTA Y FIDELIZA MUCHO MÁS.' />
 				<ServicesBanner />
 				<AboutMe />
 				<MidBanner
@@ -25,10 +22,7 @@ function HomePage() {
 					text='EL LOGO ES EL IDENTIFICADOR DE LA MARCA, SI NO ES BUENO, LA MARCA SE PIERDE.'
 				/>
 				<ClientsGallery />
-				<MidBanner
-					color='gray'
-					text='HACER FOTOS DE COMIDA ES UNA DE MIS PASIONES Y AQUÍ TE DEJO UNA BREVE MUESTRA.'
-				/>
+				<MidBanner text='HACER FOTOS DE COMIDA ES UNA DE MIS PASIONES Y AQUÍ TE DEJO UNA BREVE MUESTRA.' />
 				<PhotoGallery />
 				<ContactForm />
 			</HomeLayout>

@@ -1,41 +1,16 @@
 import styles from './styles/MidBanner.module.scss';
 import Container from '../Container';
-import React, { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-
-const bannerVariants = {
-	visible: {
-		scale: 1,
-		transition: { ease: 'easeInOut', duration: 0.5 }
-	},
-	hidden: { scale: 0.8 }
-};
+import React from 'react';
 
 function MidBanner(props) {
-	const controls = useAnimation();
-	const [ref, inView] = useInView();
-
-	useEffect(() => {
-		if (inView) {
-			controls.start('visible');
-		}
-	}, [controls, inView]);
-
 	return (
 		<section
-			className={`${styles.midBannerContainer} ${props.color === 'gray' ? styles.gray : ''}`}
+			className={`${styles.midBannerContainer} ${props.color === 'transparent' ? styles.trasparent : ''}`}
 		>
 			<Container>
-				<motion.div
-					ref={ref}
-					variants={bannerVariants}
-					initial='hidden'
-					animate={controls}
-					className={styles.midBanner}
-				>
+				<div className={styles.midBanner}>
 					<p>{props.text}</p>
-				</motion.div>
+				</div>
 			</Container>
 		</section>
 	);

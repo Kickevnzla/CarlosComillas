@@ -73,7 +73,7 @@ const HomeNavBar = () => {
 										element?.scrollIntoView({ behavior: 'smooth' });
 									}}
 								>
-									Sobre Mí
+									Sobre mí
 								</a>
 							</li>
 							<li>

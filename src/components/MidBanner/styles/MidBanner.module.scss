@@ -7,12 +7,20 @@
 	padding: 50px 0;
 }
 
+.midBannerContainer {
+	background-color: $complementary-color;
+}
+
 .midBanner p {
 	font-weight: 700;
 	width: 40ch;
 	text-align: center;
+	color: #fff;
 }
 
-.gray {
-	background-color: $bright-grey;
+.trasparent {
+	background-color: transparent;
+	p {
+		color: $primary-color;
+	}
 }

@@ -22,11 +22,9 @@ function PhotoGallery() {
 		<section className={styles.photoGalleryContainer}>
 			<Container>
 				<div className={styles.gallery}>
-					<div>
-						<h1 className={styles.title}>FOTOGRAFÍA</h1>
-						<p className={styles.subTitle}>
-							SI ALGUNA TE PROVOCA, ENTONCES SE CUMPLIÓ EL OBJETIVO.
-						</p>
+					<div className={styles.title}>
+						<h1>FOTOGRAFÍA</h1>
+						<p>SI ALGUNA TE PROVOCA, ENTONCES SE CUMPLIÓ EL OBJETIVO.</p>
 					</div>
 
 					<div className={styles.mansonryContainer}>

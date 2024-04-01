@@ -13,7 +13,7 @@ function ServicesBanner() {
 					<div className={styles.servicesContainer}>
 						<div className={styles.service}>
 							<IconoDiseno className={styles.serviceIcon} />
-							<h3>DISEÑO GRÁFICO</h3>
+							<h2>DISEÑO GRÁFICO</h2>
 							<p>
 								Diseño de identidad visual, logotipos y branding, páginas web,
 								landing pages y material impreso o POP.
@@ -27,7 +27,7 @@ function ServicesBanner() {
 						</div>
 						<div className={styles.service}>
 							<IconoAsesoria className={styles.serviceIcon} />
-							<h3>ASESORÍA</h3>
+							<h2>ASESORÍA</h2>
 							<p>
 								Te ayudo a aclarar el camino para desarrollar de forma adecuada
 								la identidad de tu marca o producto.

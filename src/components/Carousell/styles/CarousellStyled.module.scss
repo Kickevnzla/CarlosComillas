@@ -10,6 +10,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
 }
 
 .content {
@@ -35,6 +39,7 @@
 	background-color: grey;
 	border-radius: 50%;
 	padding: 0.5em;
+	cursor: pointer;
 
 	span {
 		font-size: 2rem;

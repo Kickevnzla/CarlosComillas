@@ -44,10 +44,11 @@ const HomeNavBar = () => {
 									const element = document.getElementById('mainBanner');
 									element?.scrollIntoView({ behavior: 'smooth' });
 								}}
+								aria-label='Link a inicio de la página'
 							>
 								<img
 									src={LogoComillasSinFondo}
-									alt='Logo Zelf'
+									alt='Logo Carlos comillas'
 									className={styles.logo}
 								/>
 							</a>
@@ -62,6 +63,7 @@ const HomeNavBar = () => {
 										const element = document.getElementById('services');
 										element?.scrollIntoView({ behavior: 'smooth' });
 									}}
+									aria-label='Link a servicios'
 								>
 									Servicios
 								</a>
@@ -72,6 +74,7 @@ const HomeNavBar = () => {
 										const element = document.getElementById('aboutMe');
 										element?.scrollIntoView({ behavior: 'smooth' });
 									}}
+									aria-label='Link a sobre mí'
 								>
 									Sobre mí
 								</a>
@@ -82,6 +85,7 @@ const HomeNavBar = () => {
 										const element = document.getElementById('portfolio');
 										element?.scrollIntoView({ behavior: 'smooth' });
 									}}
+									aria-label='Link a portafolio'
 								>
 									Portafolio
 								</a>
@@ -92,6 +96,7 @@ const HomeNavBar = () => {
 										const element = document.getElementById('contact');
 										element?.scrollIntoView({ behavior: 'smooth' });
 									}}
+									aria-label='Link a contacto'
 								>
 									Contacto
 								</a>

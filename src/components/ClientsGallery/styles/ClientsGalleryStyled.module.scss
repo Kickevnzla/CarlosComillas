@@ -21,64 +21,8 @@
 	align-items: center;
 	gap: 1em;
 	margin-bottom: 1em;
-}
 
-.carousel {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2em;
-}
-
-.carouselContent {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80%;
-}
-
-.gridContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid red;
-}
-
-.arrow {
-	font-size: 2rem;
-	cursor: pointer;
-	transition: 0.3s;
-	border: none;
-	line-height: 0;
-	background-color: transparent;
-}
-
-.arrow:hover {
-	transform: scale(1.3);
-}
-
-.clientsLogos {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto auto auto;
-	grid-auto-rows: 0px;
-	overflow: hidden;
-	width: 85%;
-}
-
-.logo {
-	display: inline-flex;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	transition: 0.3s;
-	cursor: pointer;
-	margin: 0.5em;
-}
-
-.logo img {
-	width: 100%;
-}
-
-.logo:hover {
-	transform: scale(1.05);
+	h2 {
+		font-size: 1.15rem;
+	}
 }

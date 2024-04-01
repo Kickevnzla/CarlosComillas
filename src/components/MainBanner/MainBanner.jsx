@@ -14,7 +14,12 @@ function MainBanner() {
 	return (
 		<section id='mainBanner' className={styles.mainBanner}>
 			<div className={styles.mainBannerContainer}>
-				<a href='https://www.instagram.com/comillasestudio/' target='_blank'>
+				<a
+					href='https://www.instagram.com/comillasestudio/'
+					target='_blank'
+					rel='noreferrer'
+					aria-label='Link a Instagram de Comillas Estudio'
+				>
 					<LogoComillas className={styles.logoComillas} />
 				</a>
 				<div className={styles.mainBannerContent}>
@@ -40,19 +45,33 @@ function MainBanner() {
 						<a
 							href='https://www.linkedin.com/in/carloscomillas/'
 							target='_blank'
+							rel='noreferrer'
+							aria-label='Link a Linkedin de Carlos Comillas'
 						>
 							<IconoLinkedin className={styles.socialMediaIcon} />
 						</a>
 						<a
 							href='https://www.instagram.com/comillasestudio/'
 							target='_blank'
+							rel='noreferrer'
+							aria-label='Link a Instagram de Comillas Estudio'
 						>
 							<IconoInstagram className={styles.socialMediaIcon} />
 						</a>
-						<a href='https://www.behance.net/carloscomillas' target='_blank'>
+						<a
+							href='https://www.behance.net/carloscomillas'
+							target='_blank'
+							rel='noreferrer'
+							aria-label='Link a Behance de Carlos Comillas'
+						>
 							<IconoBehance className={styles.socialMediaIcon} />
 						</a>
-						<a href='https://wa.me/message/TDROOFLRB2OCH1' target='_blank'>
+						<a
+							href='https://wa.me/message/TDROOFLRB2OCH1'
+							target='_blank'
+							rel='noreferrer'
+							aria-label='Link a Whatsapp de Carlos Comillas'
+						>
 							<IconoWhatsapp className={styles.socialMediaIcon} />
 						</a>
 					</div>

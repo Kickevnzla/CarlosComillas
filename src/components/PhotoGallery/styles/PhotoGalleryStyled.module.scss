@@ -56,9 +56,6 @@
 }
 
 .masonryLayout {
-	// display: grid;
-	// grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	// gap: 1em;
 	column-count: 4;
 	column-gap: 1em;
 }
@@ -68,11 +65,29 @@
 	box-sizing: border-box;
 	overflow: hidden;
 	margin-bottom: 1em;
+	filter: grayscale(100%);
+	transition: all 0.3s;
+	position: relative;
 
 	img {
 		height: auto;
 		max-width: 100%;
 	}
+}
+
+.imageTitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	padding: 0.5em;
+}
+
+.masonryItem:hover {
+	filter: grayscale(0%);
+	scale: 1.05;
 }
 
 @media (max-width: 768px) {
@@ -81,7 +96,13 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+	.masonryItem {
+		filter: grayscale(0%);
+	}
+}
+
+@media (max-width: 475px) {
 	.masonryLayout {
 		column-count: 1;
 	}

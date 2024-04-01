@@ -10,6 +10,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 2em;
 }
 
 .galleryTitle {
@@ -41,6 +42,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid red;
 }
 
 .arrow {
@@ -61,97 +63,22 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto auto auto;
 	grid-auto-rows: 0px;
-	position: relative;
 	overflow: hidden;
 	width: 85%;
 }
 
-.clientLogo {
+.logo {
 	display: inline-flex;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	filter: grayscale(100%);
 	transition: 0.3s;
 	cursor: pointer;
 	margin: 0.5em;
 }
 
-.clientLogo img {
+.logo img {
 	width: 100%;
 }
 
-.clientLogo:hover {
-	filter: grayscale(0);
-	transform: scale(1.01);
-}
-
-.clientAplicationContainer {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	height: 100dvh;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.368);
-	overflow: hidden;
-	z-index: 999;
-
-	div {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		width: 80%;
-	}
-
-	img {
-		width: 100%;
-	}
-
-	.closeIcon {
-		position: absolute;
-		top: 0;
-		right: 0;
-		margin: 10px;
-		font-size: 1.7rem;
-		color: $primary-color;
-		cursor: pointer;
-		transition: 0.3s;
-		background-color: $secundary-color;
-		border-radius: 9999px;
-	}
-
-	.closeIcon:hover {
-		transform: scale(1.3);
-	}
-}
-.arrowAplication {
-	font-size: 1.5rem;
-	cursor: pointer;
-	transition: 0.3s;
-	border: none;
-	line-height: 0;
-	fill: #000000;
-	background-color: $secundary-color;
-	border-radius: 9999px;
-	margin-inline: 1em;
-	padding: 2px;
-}
-
-.arrowAplication:hover {
-	transform: scale(1.3);
-}
-
-@media (max-width: 768px) {
-	.clientsLogos {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (max-width: 475px) {
-	.clientsLogos {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto auto;
-	}
+.logo:hover {
+	transform: scale(1.05);
 }

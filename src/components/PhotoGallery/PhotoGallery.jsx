@@ -32,6 +32,7 @@ function PhotoGallery() {
 							{images.map((image, index) => (
 								<div key={index} className={styles.masonryItem}>
 									<img src={image} alt='' />
+									<span className={styles.imageTitle}>Lumberjack's Grill</span>
 								</div>
 							))}
 						</div>

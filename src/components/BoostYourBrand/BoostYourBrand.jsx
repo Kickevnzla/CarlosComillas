@@ -7,7 +7,7 @@ function BoostYourBrand() {
 		<section className={styles.boostYourBrandContainer}>
 			<Container>
 				<div className={styles.boostYourBrand}>
-					<h3>DISEÑO GRÁFICO | LOGOS | ASESORÍA</h3>
+					<span>DISEÑO GRÁFICO | LOGOS | ASESORÍA</span>
 					<h1>POTENCIA TU MARCA</h1>
 					<p className={styles.boostYourBrandP}>
 						Te ofrezco las herramientas para que puedas darle fuerza a tu marca

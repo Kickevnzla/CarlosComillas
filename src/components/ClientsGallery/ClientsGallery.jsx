@@ -1,29 +1,24 @@
 import styles from './styles/ClientsGalleryStyled.module.scss';
 import Container from '../Container';
-import { useState } from 'react';
-import ImageViewer from '../ImageViewer';
-import { AnimatePresence } from 'framer-motion';
 import clients from '../../assets/clients.json';
 import Button from '../Button';
 import Carousell from '../Carousell';
-
-const perChunk = 3; // items per chunk
-
-const slides = clients.clients.reduce((resultArray, item, index) => {
-	const chunkIndex = Math.floor(index / perChunk);
-
-	if (!resultArray[chunkIndex]) {
-		resultArray[chunkIndex] = []; // start a new chunk
-	}
-
-	resultArray[chunkIndex].push(item);
-
-	return resultArray;
-}, []);
+import { useState } from 'react';
 
 function ClientsGallery() {
-	const [isVisible, setIsVisible] = useState(false);
-	const [tempClient, setTempClient] = useState('');
+	const [perChunk, setPerChunk] = useState(3); // items per chunk
+
+	const slides = clients.clients.reduce((resultArray, item, index) => {
+		const chunkIndex = Math.floor(index / perChunk);
+
+		if (!resultArray[chunkIndex]) {
+			resultArray[chunkIndex] = []; // start a new chunk
+		}
+
+		resultArray[chunkIndex].push(item);
+
+		return resultArray;
+	}, []);
 
 	return (
 		<section id='portfolio' className={styles.clientsGalleryContainer}>
@@ -31,9 +26,9 @@ function ClientsGallery() {
 				<div className={styles.clientsGallery}>
 					<div className={styles.galleryTitle}>
 						<h1>PORTAFOLIO</h1>
-						<h3>MARCAS Y LOGOS CON SELLO COMILLAS</h3>
+						<h2>MARCAS Y LOGOS CON SELLO COMILLAS</h2>
 					</div>
-					<Carousell slides={slides} />
+					<Carousell slides={slides} images={clients.clients} />
 					<Button
 						text='VER MÁS'
 						color='primary'
@@ -42,9 +37,6 @@ function ClientsGallery() {
 					/>
 				</div>
 			</Container>
-			<AnimatePresence initial={false}>
-				{isVisible && <ImageViewer image={tempClient.image} />}
-			</AnimatePresence>
 		</section>
 	);
 }

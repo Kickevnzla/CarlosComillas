@@ -54,7 +54,6 @@
 			"logo": "https://res.cloudinary.com/carloscomillas/image/upload/v1711475109/CarlosComillas/LogosClientes/LogoProcura.jpg",
 			"aplicacion": "https://res.cloudinary.com/carloscomillas/image/upload/v1711475233/CarlosComillas/AplicacionesClientes/AplicacionProcura.jpg"
 		},
-
 		{
 			"id": "10",
 			"nombre": "Priority",
@@ -165,21 +164,69 @@
 		}
 	],
 	"photos": [
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582600/CarlosComillas/FotografiaComillas/Italiano90s.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582594/CarlosComillas/FotografiaComillas/BurgerPollo90s.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582590/CarlosComillas/FotografiaComillas/BurgerRucula90s.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582590/CarlosComillas/FotografiaComillas/BurgerChampinon90s.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582599/CarlosComillas/FotografiaComillas/LumberMacPollo.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582598/CarlosComillas/FotografiaComillas/LumberOverload.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582591/CarlosComillas/FotografiaComillas/LumberMacPork.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582589/CarlosComillas/FotografiaComillas/LumberSalad.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582595/CarlosComillas/FotografiaComillas/PizzaPepperoni.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582592/CarlosComillas/FotografiaComillas/PizzaTodasLasCarnes.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582593/CarlosComillas/FotografiaComillas/PizzaRucula.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582591/CarlosComillas/FotografiaComillas/PizzaCarnes.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582597/CarlosComillas/FotografiaComillas/Minato1.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582597/CarlosComillas/FotografiaComillas/Minato4.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582596/CarlosComillas/FotografiaComillas/Minato3.jpg",
-		"https://res.cloudinary.com/carloscomillas/image/upload/v1711582595/CarlosComillas/FotografiaComillas/Minato2.jpg"
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582600/CarlosComillas/FotografiaComillas/Italiano90s.jpg",
+			"Cliente": "Temático - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582594/CarlosComillas/FotografiaComillas/BurgerPollo90s.jpg",
+			"Cliente": "Temático - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582590/CarlosComillas/FotografiaComillas/BurgerRucula90s.jpg",
+			"Cliente": "Temático - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582590/CarlosComillas/FotografiaComillas/BurgerChampinon90s.jpg",
+			"Cliente": "Temático - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582599/CarlosComillas/FotografiaComillas/LumberMacPollo.jpg",
+			"Cliente": "Lumberjacks Grill - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582598/CarlosComillas/FotografiaComillas/LumberOverload.jpg",
+			"Cliente": "Lumberjacks Grill - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582591/CarlosComillas/FotografiaComillas/LumberMacPork.jpg",
+			"Cliente": "Lumberjacks Grill - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582589/CarlosComillas/FotografiaComillas/LumberSalad.jpg",
+			"Cliente": "Lumberjacks Grill - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582595/CarlosComillas/FotografiaComillas/PizzaPepperoni.jpg",
+			"Cliente": "Pizza AD2 - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582592/CarlosComillas/FotografiaComillas/PizzaTodasLasCarnes.jpg",
+			"Cliente": "Pizza AD2 - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582593/CarlosComillas/FotografiaComillas/PizzaRucula.jpg",
+			"Cliente": "Pizza AD2 - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582591/CarlosComillas/FotografiaComillas/PizzaCarnes.jpg",
+			"Cliente": "Pizza AD2 - 2021"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582597/CarlosComillas/FotografiaComillas/Minato1.jpg",
+			"Cliente": "Minato Sushi - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582597/CarlosComillas/FotografiaComillas/Minato4.jpg",
+			"Cliente": "Minato Sushi - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582596/CarlosComillas/FotografiaComillas/Minato3.jpg",
+			"Cliente": "Minato Sushi - 2022"
+		},
+		{
+			"link": "https://res.cloudinary.com/carloscomillas/image/upload/v1711582595/CarlosComillas/FotografiaComillas/Minato2.jpg",
+			"Cliente": "Minato Sushi - 2022"
+		}
 	]
 }

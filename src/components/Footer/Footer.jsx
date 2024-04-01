@@ -42,6 +42,8 @@ const Footer = () => {
 								className={styles.socialIconLink}
 								href={icon.link}
 								target='_blank'
+								rel='noreferrer'
+								aria-label={`Link a ${icon.link}`}
 							>
 								<icon.icon />
 							</a>
@@ -55,6 +57,8 @@ const Footer = () => {
 				<a
 					href='https://www.linkedin.com/in/jesús-paredes-arnaez-8725841bb'
 					target='_blank'
+					rel='noreferrer'
+					aria-label='Link a Linkedin de Jesús Paredes'
 				>
 					<motion.p
 						whileHover={{ color: '#be5cc1', scale: 1.1 }}
